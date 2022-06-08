@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todos</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <!-- 主体部分 -->
+  <div class="container-fluid mainBox">
+    <!-- 左侧菜单 -->
+    <div class="menu">
+      <!-- <div class="menu-item menuItem-active" data-index="0">
+        <span class="glyphicon glyphicon-lock menu-left-icon"></span>
+        <span class="menuTitle">Jessica</span> -->
+      <!-- 徽标 -->
+      <!-- <span class="badge menu-right-badge active-badge">2</span>
+      </div>
+      <div class="menu-item" data-index="1">
+        <span class="glyphicon glyphicon-lock menu-left-icon"></span>
+        <span class="menuTitle">Mark</span> -->
+      <!-- 徽标 -->
+      <!-- <span class="badge menu-right-badge">2</span>
+      </div> -->
+      <!-- 新增 -->
+      <div class="menu-item addTodoList" id="addTodo">
+        <span class="glyphicon glyphicon-plus menu-left-icon"></span>新增
+      </div>
+    </div>
+
+    <!-- 右侧todos容器 -->
+    <div class="todosWrapper">
+      <!-- 头部 -->
+      <header class="header">
+        <!-- 标题部分 -->
+        <div class="titleBox">
+          <h1>
+            <span id="title">Jessica</span>
+            <!-- 徽标 -->
+            <span class="badge active-badge" id="title-badge">4</span>
+          </h1>
+          <!-- 锁定和删除 -->
+          <div class="actions">
+            <span id="lock" class="glyphicon glyphicon-lock actions-icon"></span>
+            <!-- 删除 -->
+            <span id="remove" class="glyphicon glyphicon-trash actions-icon"></span>
+          </div>
+        </div>
+        <!-- title编辑框 -->
+        <div class="title-editer">
+          <input type="text" class="input" id="title-input" value="Jessica">
+          <!-- 取消 -->
+          <div class="actions">
+            <span class="glyphicon glyphicon-remove-circle" id="cancel" style="float: right;"></span>
+          </div>
+        </div>
+        <!-- 添加部分 -->
+        <div class="formBox">
+          <span class="glyphicon glyphicon-plus-sign form-add-icon"></span>
+          <input class="input" type="text" placeholder="请输入" id="addTodoInp">
+        </div>
+        <!-- <div></div> -->
+      </header>
+
+      <!-- todoList的每一项 -->
+      <div class="todoItemWrapper">
+        <!-- <div class="todoItem">
+          <label class="label">
+            <input type="checkbox">
+          </label> -->
+        <!-- 输入框 -->
+        <!-- <input type="text" class="input todoItem-input todo-done" value="比公价变原条听外群理断海为回。研九强想就程响办存做示见接。"> -->
+        <!-- 删除按钮 -->
+        <!-- <span class="glyphicon glyphicon-trash todoItem-delete"></span>
+        </div> -->
+        <!-- <div class="todoItem">
+          <label class="label">
+            <input type="checkbox" name="checked">
+          </label>
+          <input type="text" class="input todoItem-input" value="比公价变原条听外群理断海为回。研九强想就程响办存做示见接。">
+          <span class="glyphicon glyphicon-trash todoItem-delete"></span>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</body>
+
+<!-- <script src="./js/index2.js"></script> -->
+<script src="../jquery和AJAX练习/jquery.js"></script>
+<script src="./js/index2.js"></script>
+
+</html>

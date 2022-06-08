@@ -1,0 +1,198 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #315481;
+  background-image: linear-gradient(to bottom, #315481, #918e82 100%);
+  background-repeat: no-repeat;
+  padding: 8px;
+}
+.mainBox {
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  width: 270px;
+  height: 400px;
+}
+
+.menu-item {
+  line-height: 1.5em;
+  padding: 12px 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+  position: relative;
+  color: rgba(255, 255, 255, 0.4);
+  transition: all 0.4s;
+}
+
+.menuItem-active {
+  color: #fff;
+}
+
+.menu-item:hover {
+  color: #fff;
+}
+
+.addTodoList {
+  color: #5db9ff;
+}
+
+.addTodoList:hover {
+  color: #5db9ff;
+}
+
+/* menuItem左侧图标 */
+.menu-left-icon {
+  font-size: 14px;
+  position: absolute;
+  left: 16px;
+  top: 16px;
+}
+.badge {
+  color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.4s;
+}
+
+/* menuItem右侧徽标 */
+.menu-right-badge {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+
+.menu-item:hover .menu-right-badge {
+  background-color: #2cc5d2;
+  color: #fff;
+}
+
+.active-badge {
+  background-color: #2cc5d2;
+  color: #fff;
+}
+
+.todosWrapper {
+  flex: 1;
+  max-width: 700px;
+  height: calc(100vh - 18px);
+  background-color: #fff;
+}
+
+.header {
+  background: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.titleBox {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.titleBox h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.title-editer {
+  padding: 10px 20px;
+  padding-right: 0px;
+  display: none;
+  position: relative;
+}
+
+#title-input {
+  height: 22px;
+  font-weight: bold;
+  padding-left: 0px;
+  padding-right: 30px;
+  font-size: 16px;
+}
+
+#cancel {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions-icon {
+  display: block;
+  width: 32px;
+  height: 100%;
+  text-align: center;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.formBox {
+  height: 31px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.form-add-icon {
+  position: absolute;
+  left: 20px;
+  top: 9px;
+}
+
+.input {
+  height: 100%;
+  background: transparent;
+  padding-left: 24px;
+  width: 100%;
+  border: none;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.todoItemWrapper {
+  height: calc(100% - 80px);
+  overflow-y: auto;
+}
+
+.todoItem {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  width: 44px;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todoItem-input {
+  flex: 1;
+  padding-left: 0;
+}
+
+.todoItem-delete {
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.todo-done {
+  text-decoration: line-through;
+  color: #ccc;
+  cursor: pointer;
+}
